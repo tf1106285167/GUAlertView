@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GUAlertView"
-  spec.version      = "1.0.7"
+  spec.version      = "1.0.8"
   spec.summary      = "自定义弹框"
 
   # This description is used to generate tags and improve search results.
@@ -65,10 +65,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "7.0"
+  spec.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "7.0"
+  # spec.ios.deployment_target = "8.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -94,7 +94,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "GUAlertView"
   # spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "GUAlertView/*.h"
+  #spec.public_header_files = "GUAlertView/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,7 +130,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
