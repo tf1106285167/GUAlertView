@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GUAlertView"
-  spec.version      = "1.0.11"
+  spec.version      = "1.0.13"
   spec.summary      = "自定义弹框"
 
   # This description is used to generate tags and improve search results.
