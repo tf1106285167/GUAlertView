@@ -27,18 +27,18 @@
 
 @implementation GUAlertView
 
-//+ (NSMutableArray<GUAlertView *> *)displayAlertViews {
-//    NSMutableArray *displayAlertViews = objc_getAssociatedObject(self, @selector(displayAlertViews));
-//    if (!displayAlertViews) {
-//        displayAlertViews = @[].mutableCopy;
-//        self.displayAlertViews = displayAlertViews;
-//    }
-//    return displayAlertViews;
-//}
-//
-//+ (void)setDisplayAlertViews:(NSMutableArray<GUAlertView *> *)displayAlertViews {
-//    objc_setAssociatedObject(self, @selector(displayAlertViews), displayAlertViews, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
++ (NSMutableArray<GUAlertView *> *)displayAlertViews {
+    NSMutableArray *displayAlertViews = objc_getAssociatedObject(self, @selector(displayAlertViews));
+    if (!displayAlertViews) {
+        displayAlertViews = @[].mutableCopy;
+        self.displayAlertViews = displayAlertViews;
+    }
+    return displayAlertViews;
+}
+
++ (void)setDisplayAlertViews:(NSMutableArray<GUAlertView *> *)displayAlertViews {
+    objc_setAssociatedObject(self, @selector(displayAlertViews), displayAlertViews, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 - (instancetype)init {
     
