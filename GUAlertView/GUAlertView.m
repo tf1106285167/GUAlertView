@@ -194,7 +194,7 @@
     alertView.labContent.attributedText = attributeMessage;
     alertView.confirmHandler = confirm;
     alertView.cancelHandler = cancel;
-    alertView.parentView = GUAppDelegate.window;
+    alertView.parentView = [UIApplication sharedApplication].keyWindow;
     
     [self.displayAlertViews addObject:alertView];
     if (self.displayAlertViews.count == 1) {
