@@ -91,8 +91,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "GUAlertView/*.{h,m,xib}"
+  spec.source_files  = "GUAlertView/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
+
+ #spec.resource = ['GUAlertView/*.xib']
+ #spec.resource_bundle = {'GUAlertView' => 'GUAlertView/*.xib'}
 
   #spec.public_header_files = "GUAlertView/*.h"
 
