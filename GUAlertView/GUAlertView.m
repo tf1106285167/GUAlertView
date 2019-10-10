@@ -227,10 +227,10 @@
     if (!_singleBtn) {
         _singleBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.backView addSubview:_singleBtn];
-//        [_singleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.right.bottom.equalTo(@0);
-//            make.height.equalTo(@45);
-//        }];
+        [_singleBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.bottom.equalTo(@0);
+            make.height.equalTo(@45);
+        }];
         _singleBtn.backgroundColor = [UIColor whiteColor];
         _singleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     }
@@ -272,11 +272,11 @@
     
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.backView addSubview:closeBtn];
-//    [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.right.mas_equalTo(0);
-//        make.top.mas_equalTo(0);
-//        make.width.height.mas_equalTo(44);
-//    }];
+    [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.width.height.mas_equalTo(44);
+    }];
     [closeBtn setImage:[UIImage imageNamed:@"icon_SClose"] forState:UIControlStateNormal];
 //    @weakify(self)
 //    [[closeBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
