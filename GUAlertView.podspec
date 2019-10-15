@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GUAlertView"
-  spec.version      = "1.1.2"
+  spec.version      = "1.1.3"
   spec.summary      = "自定义弹框"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/tf1106285167/GUAlertView.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/tf1106285167/GUAlertView.git", :tag => "1.1.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
