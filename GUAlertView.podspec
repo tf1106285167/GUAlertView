@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GUAlertView"
-  spec.version      = "1.1.4"
+  spec.version      = "1.1.5"
   spec.summary      = "自定义弹框"
 
   # This description is used to generate tags and improve search results.
@@ -110,7 +110,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "GUAlertView/*.png"
+  spec.resources = "GUAlertView/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
